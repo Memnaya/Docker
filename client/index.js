@@ -54,7 +54,7 @@ async function startCheck() {
 
     while (true) {
         try {
-            const response = await fetch(`/start-check?ip=${ip}&port=${port}`);
+            const response = await fetch(`http://localhost:5000/start-check?ip=${ip}&port=${port}`);
             const data = await response.json();
 
             const row = document.createElement('tr');
