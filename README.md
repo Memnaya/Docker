@@ -17,7 +17,7 @@
 - **Язык программирования:** JavaScript (Node.js)
 - **Библиотеки/фреймворки:** Node.js, Express.js, Bootstrap, Docker
 
-### ЗапускЖ
+### Запуск
 
 ```
 docker compose build
