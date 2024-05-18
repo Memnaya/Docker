@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProxyHunter app</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to ProxyHunter!</h1>
+            <hr class="my-4">
+            <p>The application generates random IP addresses and tries to establish 
+                a connection to various ports on these addresses. If the connection 
+                fails due to a timeout, it is discarded. If the connection is successful, 
+                information about this IP and port is recorded in the database.</p>
+            <button id="generateBtn" class="btn btn-primary">Click on me!</button>
+        </div>
+        
+        <div id="connectionAttempts" class="invisible jumbotron mt-5">
+            <table id="resultTable" class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>IP</th>
+                        <th>Port</th>
+                        <th>Proxy</th>
+                    </tr>
+                </thead>
+                <tbody id="resultTableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
+
